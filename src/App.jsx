@@ -5,29 +5,73 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [person, setPerson] = useState({
+    firstName: "John",
+    lastName: "Andrews",
+    age: 100,
+  });
 
+  const handleFirstNameChange = () => console.log()
+  const handleLastNameChange = () => console.log()
+
+  const handleSubmit = () => console.log()
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+    <form className="cv-input" onSubmit={handleSubmit}>
+      <h1>CV Application</h1>
+      <h2>Personal Information:</h2>
+      <label>
+        First name:{" "}
+        <input value={person.firstName} onChange={handleFirstNameChange} />
+      </label>
+      <label>
+        Last name:{" "}
+        <input value={person.lastName} onChange={handleLastNameChange} />
+      </label>
+      <label>
+        E-mail:{" "}
+        <input value={person.lastName} onChange={handleLastNameChange} />
+      </label>
+      <label>
+        Phone number:{" "}
+        <input value={person.lastName} onChange={handleLastNameChange} />
+      </label>
+      <h2>Educational experience:</h2>
+      <label>
+        School name:{" "}
+        <input value={person.lastName} onChange={handleLastNameChange} />
+      </label>
+      <label>
+        Title of study:{" "}
+        <input value={person.lastName} onChange={handleLastNameChange} />
+      </label>
+      <label>
+        Date of study:{" "}
+        <input value={person.lastName} onChange={handleLastNameChange} />
+      </label>
+      <h2>Practical Experience</h2>
+      <label>
+        Company name:{" "}
+        <input value={person.lastName} onChange={handleLastNameChange} />
+      </label>
+      <label>
+        Position title:{" "}
+        <input value={person.lastName} onChange={handleLastNameChange} />
+      </label>
+      <label>
+        Main responsibilities:{" "}
+        <input value={person.lastName} onChange={handleLastNameChange} />
+      </label>
+      <label>
+        Date of work:{" "}
+        <input value={person.lastName} onChange={handleLastNameChange} />
+      </label>
+      <button>Submit</button>
+
+      <p>
+        Your CV is: <b>{}</b>
       </p>
+    </form>
     </>
   )
 }
