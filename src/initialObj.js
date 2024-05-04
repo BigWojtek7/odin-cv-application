@@ -11,5 +11,6 @@ export const initial = {
   companyName: "",
   positionTitle:"",
   mainResponsibilities: "",
-  dateOfWork: "",
+  dateOfWorkStart:"",
+  dateOfWorkFinish:"",
 };

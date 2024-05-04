@@ -36,7 +36,7 @@ export default function CvOutput({person, editHandler}){
           Main responsibilities: <b>{person.mainResponsibilities}</b>
         </p>
         <p>
-          Date of work: <b>{person.dateOfWork}</b>
+          Date of work: From: <b>{person.dateOfWorkStart}</b> To:  <b>{person.dateOfWorkFinish}</b>
         </p>
         <button onClick={editHandler}>Edit</button>
       </div>

@@ -54,15 +54,16 @@ export default function Form({person, setPerson, handleSubmit}) {
           />
         </label>
         <label>
-          Date of study:{" "}
+          Graduation date:{" "}
           <input
+            type="month"
             value={person.dateOfStudy}
             onChange={(e) =>
               setPerson({ ...person, dateOfStudy: e.target.value })
             }
           />
         </label>
-        <h2>Practical Experience</h2>
+        <h2>Practical Experience:</h2>
         <label>
           Company name:{" "}
           <input
@@ -90,15 +91,29 @@ export default function Form({person, setPerson, handleSubmit}) {
             }
           />
         </label>
+        <fieldset>
+          <legend>Date of work:{" "}</legend>
         <label>
-          Date of work:{" "}
+          From:{" "}
           <input
-            value={person.dateOfWork}
+            type="month"
+            value={person.dateOfWorkStart}
             onChange={(e) =>
-              setPerson({ ...person, dateOfWork: e.target.value })
+              setPerson({ ...person, dateOfWorkStart: e.target.value })
             }
           />
         </label>
+        <label>
+          To:{" "}
+          <input
+            type="month"
+            value={person.dateOfWorkFinish}
+            onChange={(e) =>
+              setPerson({ ...person, dateOfWorkFinish: e.target.value })
+            }
+          />
+        </label>
+        </fieldset>
         <button>Submit</button>
       </form>
     </>
