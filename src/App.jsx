@@ -8,8 +8,6 @@ function App() {
   const [person, setPerson] = useState(initial);
   const [status, setStatus] = useState("typing");
 
-  // const handleChange = () => console.log("2222");
-
   function handleSubmit(e) {
     e.preventDefault();
     setStatus("sent");
