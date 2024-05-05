@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { initial } from "./initialObj";
-import CvOutput from "./cv-output";
-import Form from "./cv-form";
-import "./App.css";
+import { initial } from "./constants/initialObj";
+import CvOutput from "./components/cv-output";
+import Form from "./components/cv-form";
+import "./styles/App.css";
 
 function App() {
   const [person, setPerson] = useState(initial);
