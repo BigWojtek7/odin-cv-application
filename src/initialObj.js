@@ -1,16 +1,16 @@
 export const initial = {
-
-  firstName: "John",
-  lastName: "Andrews",
-  email: 100,
+  firstName: "",
+  lastName: "",
+  email: "",
   phone: "",
 
   schoolName: "",
   titleOfStudy: "",
   dateOfStudy: "",
+
   companyName: "",
-  positionTitle:"",
+  positionTitle: "",
   mainResponsibilities: "",
-  dateOfWorkStart:"",
-  dateOfWorkFinish:"",
+  dateOfWorkStart: "",
+  dateOfWorkFinish: "",
 };

@@ -1,4 +1,4 @@
-export default function Form({person, setPerson, handleSubmit}) {
+export default function Form({ person, setPerson, handleSubmit }) {
   return (
     <>
       <form className="cv-input" onSubmit={handleSubmit}>
@@ -92,27 +92,27 @@ export default function Form({person, setPerson, handleSubmit}) {
           />
         </label>
         <fieldset>
-          <legend>Date of work:{" "}</legend>
-        <label>
-          From:{" "}
-          <input
-            type="month"
-            value={person.dateOfWorkStart}
-            onChange={(e) =>
-              setPerson({ ...person, dateOfWorkStart: e.target.value })
-            }
-          />
-        </label>
-        <label>
-          To:{" "}
-          <input
-            type="month"
-            value={person.dateOfWorkFinish}
-            onChange={(e) =>
-              setPerson({ ...person, dateOfWorkFinish: e.target.value })
-            }
-          />
-        </label>
+          <legend>Date of work: </legend>
+          <label>
+            From:{" "}
+            <input
+              type="month"
+              value={person.dateOfWorkStart}
+              onChange={(e) =>
+                setPerson({ ...person, dateOfWorkStart: e.target.value })
+              }
+            />
+          </label>
+          <label>
+            To:{" "}
+            <input
+              type="month"
+              value={person.dateOfWorkFinish}
+              onChange={(e) =>
+                setPerson({ ...person, dateOfWorkFinish: e.target.value })
+              }
+            />
+          </label>
         </fieldset>
         <button>Submit</button>
       </form>
